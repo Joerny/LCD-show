@@ -22,6 +22,12 @@ fi
 
 echo "1" > ./boot/mark
 
+if test "$j" = "kali" ;then
+sudo apt-get install libraspberrypi-dev kalipi-kernel-headers
+else
+sudo apt-get install libraspberrypi-dev raspberrypi-kernel-headers
+fi
+
 sudo dpkg -i -B ./xinput-calibrator_0.7.5-1_armhf.deb
 sudo apt-get install cmake -y
 cd ./rpi-fbcp/build/
