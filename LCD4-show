@@ -8,6 +8,8 @@ do
 done
 #echo "$var1"
 
+sudo apt-get update
+
 j=$(uname -n)
 if test "$var1" = "0" -a "$1" != "lite" -a "$2" != "lite" ;then
 
